@@ -1,0 +1,225 @@
+@media print, (max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 40px;
+    }
+
+
+    .swiper-button-prev
+    {
+        left: -84px;
+    }
+
+    .swiper-button-next
+    {
+        right: -84px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .col_left
+    {
+        width: 40.95%;
+    }
+
+
+    .contacts_info .col_right
+    {
+        width: calc(59.05% - 74px);
+        padding-top: 32px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .back_link
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery .item .thumb
+    {
+        height: 313px;
+    }
+
+    .photo_gallery .grid > *:nth-child(1) .thumb,
+    .photo_gallery .grid > *:nth-child(10) .thumb,
+    .photo_gallery .grid > *:nth-child(13) .thumb,
+    .photo_gallery .grid > *:nth-child(16) .thumb,
+    .photo_gallery .grid > *:nth-child(21) .thumb
+    {
+        height: 668px;
+    }
+
+
+
+    /*-------------------
+        Concerts head
+    -------------------*/
+    .concerts_head .image
+    {
+        height: 589px;
+    }
+
+
+    .concerts_head .data
+    {
+        width: 586px;
+        padding: 48px 56px;
+    }
+
+
+    .concerts_head .sort
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid > *
+    {
+        width: 530px;
+    }
+
+    .articles .grid .thumb
+    {
+        padding-bottom: 323px;
+    }
+
+    .articles .grid .info
+    {
+        padding: 24px;
+    }
+
+
+    .articles .grid > *.big
+    {
+        width: calc(100% - 610px);
+    }
+
+    .articles .grid > *.big .thumb
+    {
+        padding-bottom: 686px;
+    }
+
+    .articles .grid > *.big .info
+    {
+        padding: 24px 32px;
+    }
+
+
+    .articles .row
+    {
+        margin-bottom: -56px;
+        margin-left: -40px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 40px);
+        margin-bottom: 56px;
+        margin-left: 40px;
+    }
+
+
+
+    /*-------------------
+        About gallery
+    -------------------*/
+    .info_block .title
+    {
+        width: 39.91%;
+    }
+
+    .info_block .title div
+    {
+        padding: 0;
+    }
+
+    .info_block .title span
+    {
+        margin-left: 0;
+    }
+
+
+    .info_block .text_block
+    {
+        width: calc(60.09% - 40px);
+    }
+
+
+    .about_gallery .thumb
+    {
+        width: 188px;
+        height: 282px;
+    }
+
+    .about_gallery .big .thumb
+    {
+        width: 302px;
+        height: 454px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #gallery_modal .swiper-container
+    {
+        width: 1080px;
+    }
+
+
+    #gallery_modal .image
+    {
+        padding-bottom: 43%;
+    }
+
+    #gallery_modal .image.vertical
+    {
+        width: 500px;
+        padding-bottom: 690px;
+    }
+}

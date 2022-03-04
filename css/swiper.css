@@ -1,75 +1,62 @@
 .swiper-button-next,
 .swiper-button-prev
 {
+    color: #fff;
+
     top: 0;
     bottom: 0;
 
-    display: block;
+    display: flex;
 
-    width: 50px;
-    height: 32px;
+    width: 56px;
+    height: 56px;
     margin: auto;
 
+    transition: color .2s linear;
     transform: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .swiper-button-prev
 {
-    left: 50%;
+    left: -152px;
 }
 
 .swiper-button-next
 {
-    right: 50%;
-}
-
-.swiper-button-next:before,
-.swiper-button-prev:before
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-
-    width: 30px;
-    height: 2px;
-    margin: auto;
-
-    content: '';
-
-    background: #287ddb;
+    right: -152px;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after
 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 7px;
-
-    display: block;
-
-    width: 14px;
-    height: 14px;
-    margin: auto;
-
-    content: '';
-    transform: rotate(-45deg);
-
-    border-top: 2px solid #287ddb;
-    border-left: 2px solid #287ddb;
+    display: none;
 }
 
-.swiper-button-next:after
-{
-    left: -7px;
 
-    transform: rotate(-225deg);
+.swiper-button-next .icon,
+.swiper-button-prev .icon
+{
+    display: block;
+
+    width: 56px;
+    height: 56px;
+}
+
+.swiper-button-next .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    color: #5aa5b4;
 }
 
 

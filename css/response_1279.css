@@ -3,6 +3,13 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 32px;
+    }
+
+
     html.custom_scroll ::-webkit-scrollbar
     {
         width: 5px;
@@ -10,13 +17,51 @@
     }
 
 
+    .cont
+    {
+        padding: 0 24px;
+    }
+
+
+    .swiper-button-prev
+    {
+        left: -56px;
+    }
+
+    .swiper-button-next
+    {
+        right: -56px;
+    }
+
+
+    .swiper-button-next .icon,
+    .swiper-button-prev .icon
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+
 
     /*--------------
-        Fancybox
+        All link
     --------------*/
-    .fancybox__slide
+    .all_link
     {
-        padding: 32px;
+        margin-top: 60px;
+    }
+
+
+    .all_link a
+    {
+        font-size: 16px;
+
+        padding: 16px 64px;
+    }
+
+    .all_link a.min_pad
+    {
+        padding: 16px 48px;
     }
 
 
@@ -24,18 +69,32 @@
     /*------------
         Header
     ------------*/
+    header
+    {
+        padding: 16px 0;
+    }
 
 
+    header .menu
+    {
+        margin-left: 60px;
+    }
 
-    /*-------------
-        Sidebar
-    -------------*/
+    header .menu .item + .item
+    {
+        margin-left: 32px;
+    }
 
 
+    header .langs
+    {
+        font-size: 16px;
+    }
 
-    /*---------------
-        Page head
-    ---------------*/
+    header .langs > * + *
+    {
+        margin-left: 20px;
+    }
 
 
 
@@ -45,31 +104,736 @@
 
 
 
-    /*------------------
-        Form elements
-    ------------------*/
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        margin-bottom: 24px;
+    }
 
 
 
     /*----------------
-        Typography
+        Home block
     ----------------*/
+    .home_block .title
+    {
+        font-size: 80px;
+        line-height: 100%;
+
+        margin-bottom: 36px;
+    }
 
 
 
-    /*-----------------
-        Main slider
-    -----------------*/
+    /*------------------
+        Next concert
+    ------------------*/
+    .next_concert .btn
+    {
+        font-size: 16px;
+
+        width: 380px;
+        height: 60px;
+    }
+
+    .next_concert .btn .icon
+    {
+        width: 30px;
+        height: 30px;
+        margin-left: 6px;
+    }
+
+
+    .next_concert .concert
+    {
+        width: 380px;
+        padding: 24px 40px;
+    }
+
+
+    .next_concert .concert .link
+    {
+        font-size: 16px;
+
+        width: 72px;
+    }
+
+    .next_concert .concert .link .icon
+    {
+        right: 20px;
+
+        width: 32px;
+        height: 32px;
+    }
+
+    .next_concert .concert .link span
+    {
+        left: 36px;
+    }
+
+    .next_concert .concert .link:hover
+    {
+        width: 200px;
+    }
+
+
+
+    /*-------------
+        Socials
+    -------------*/
+    .socials
+    {
+        right: 24px;
+        bottom: 16px;
+    }
+
+
+    .socials a
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .socials a + a
+    {
+        margin-left: 24px;
+    }
+
+
+    .socials .icon
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+    .socials .facebook_link .icon
+    {
+        width: 12px;
+        height: 22px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        padding: 80px 0 100px;
+    }
+
+
+    .error_info .code img
+    {
+        width: 640px;
+    }
+
+
+    .error_info .title
+    {
+        font-size: 36px;
+        line-height: calc(100% + 8px);
+
+        margin-top: 40px;
+    }
+
+
+    .error_info .link
+    {
+        margin-top: 40px;
+    }
+
+    .error_info .link a
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 16px 40px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        margin-bottom: 100px;
+        padding-top: 40px;
+    }
+
+
+    .contacts_info .col_right
+    {
+        width: calc(59.05% - 40px);
+        padding-top: 0;
+    }
+
+
+    .contacts_info .socials
+    {
+        margin-top: 24px;
+    }
+
+    .contacts_info .socials a
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .contacts_info .socials a + a
+    {
+        margin-left: 24px;
+    }
+
+
+    .contacts_info .title
+    {
+        font-size: 16px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .contacts_info .items
+    {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .contacts_info .items > * + *
+    {
+        margin-top: 32px;
+    }
+
+
+    .contacts_info .location
+    {
+        font-size: 16px;
+
+        margin-bottom: 12px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        margin-bottom: 100px;
+        padding-top: 40px;
+    }
+
+
+    .article_info .source
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*-------------------
+        Video gallery
+    -------------------*/
+    .video_gallery
+    {
+        margin-bottom: 100px;
+        padding-top: 40px;
+    }
+
+
+    .video_gallery .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+    .video_gallery .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+    .video_gallery .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery
+    {
+        margin-bottom: 100px;
+        padding-top: 40px;
+    }
+
+
+    .photo_gallery .links
+    {
+        margin-left: -40px;
+    }
+
+    .photo_gallery .links > *
+    {
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+
+    .photo_gallery .links a
+    {
+        font-size: 16px;
+    }
+
+
+    .photo_gallery .grid
+    {
+        grid-gap: 24px;
+    }
+
+
+    .photo_gallery .item .thumb
+    {
+        height: 236px;
+    }
+
+    .photo_gallery .grid > *:nth-child(1) .thumb,
+    .photo_gallery .grid > *:nth-child(10) .thumb,
+    .photo_gallery .grid > *:nth-child(13) .thumb,
+    .photo_gallery .grid > *:nth-child(16) .thumb,
+    .photo_gallery .grid > *:nth-child(21) .thumb
+    {
+        height: 496px;
+    }
+
+
+
+    /*-------------------
+        Concerts head
+    -------------------*/
+    .concerts_head
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .concerts_head .image
+    {
+        height: 462px;
+    }
+
+    .concerts_head .image img
+    {
+        object-position: 100% 50%;
+    }
+
+
+    .concerts_head .data
+    {
+        width: 440px;
+        padding: 32px;
+    }
+
+    .concerts_head .data .title
+    {
+        font-size: 60px;
+        line-height: 100%;
+    }
+
+    .concerts_head .data .title small
+    {
+        font-size: 16px;
+    }
+
+
+    .concerts_head .data .link
+    {
+        font-size: 16px;
+
+        margin-top: 52px;
+    }
+
+    .concerts_head .data .link .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .concerts_head .sort
+    {
+        padding: 0 24px;
+    }
+
+
+
+
+    /*--------------
+        Concerts
+    --------------*/
+    .concerts
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .concerts .list > * + *
+    {
+        margin-top: 52px;
+    }
+
+
+    .concerts .concert_wrap
+    {
+        padding: 72px 0 0 72px;
+    }
+
+
+    .concerts .concert .date
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: 140px;
+        height: 140px;
+    }
+
+    .concerts .concert .date .day
+    {
+        font-size: 60px;
+        line-height: 100%;
+
+        margin-bottom: 0;
+    }
+
+    .concerts .concert .date .time
+    {
+        margin-top: 0;
+    }
+
+
+    .concerts .concert .info
+    {
+        width: calc(100% - 320px);
+        padding: 32px 32px 32px 64px;
+    }
+
+
+    .concerts .concert .name
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+    .concerts .concert .desc
+    {
+        font-size: 16px;
+
+        margin-top: 20px;
+    }
+
+
+    .concerts .concert .link
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        width: 200px;
+        margin-top: 32px;
+        padding-top: 23px;
+    }
+
+    .concerts .concert .link .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .concerts .concert .year
+    {
+        right: 32px;
+        bottom: 44px;
+
+        width: 164px;
+    }
+
+
+    .concerts .concert .thumb
+    {
+        width: 320px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        margin-bottom: 100px;
+        padding-top: 40px;
+    }
+
+
+    .articles .section + .section
+    {
+        margin-top: 80px;
+    }
+
+
+    .articles .block_title
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .articles .name
+    {
+        font-size: 16px;
+    }
+
+    .articles .source
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .articles .date
+    {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+
+    .articles .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+    .articles .grid
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .articles .grid > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .articles .grid .thumb
+    {
+        padding-bottom: 60%;
+    }
+
+    .articles .grid .date
+    {
+        margin-top: 20px;
+    }
+
+
+    .articles .grid > *.big
+    {
+        width: calc(100% - 24px);
+    }
+
+    .articles .grid > *.big .thumb
+    {
+        padding-bottom: 50%;
+    }
+
+    .articles .grid > *.big .name
+    {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 100px;
+        padding-top: 40px;
+    }
+
+
+
+    /*----------------
+        Info block
+    ----------------*/
+    .info_block
+    {
+        margin-bottom: 100px;
+    }
+
+
+
+    /*-------------------
+        About gallery
+    -------------------*/
+    .about_gallery .thumb
+    {
+        width: 140px;
+        height: 210px;
+    }
+
+    .about_gallery .big .thumb
+    {
+        width: 232px;
+        height: 348px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer .cont + .cont
+    {
+        margin-top: 40px;
+    }
+
+
+
+    footer .logo img
+    {
+        width: 92px;
+    }
+
+
+
+    footer .links
+    {
+        margin-left: 100px;
+
+        column-gap: 60px;
+    }
+
+    footer .links > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+
+    footer .socials a
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    footer .socials a + a
+    {
+        margin-left: 24px;
+    }
+
+
+
+    footer .copyright
+    {
+        margin-left: 192px;
+    }
 
 
 
     /*-----------
         PopUp
     -----------*/
+    .modal
+    {
+        padding: 32px 64px;
+    }
+
+
+    #gallery_modal .image.vertical
+    {
+        width: 400px;
+        padding-bottom: 552px;
+    }
+
+
+    #gallery_modal .data
+    {
+        margin-top: 24px;
+    }
+
+
+    #gallery_modal .title
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+    #gallery_modal .year,
+    #gallery_modal .author
+    {
+        margin-top: 32px;
+    }
+
+
+    #gallery_modal .image.vertical + .data .desc,
+    #gallery_modal .image.vertical + .data .year,
+    #gallery_modal .image.vertical + .data .author,
+    #gallery_modal .image.vertical + .data .download_link
+    {
+        margin-top: 28px;
+    }
+
+    #gallery_modal .download_link a
+    {
+        font-size: 16px;
+
+        padding: 11px 23px;
+    }
+
+    #gallery_modal .download_link .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
 }

@@ -19,10 +19,6 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 
-	// Маска ввода
-	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
-
-
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.dragToClose = false
@@ -83,28 +79,6 @@ $(() => {
 		$('meta[name=viewport]').attr('content', 'width=375, user-scalable=no')
 
 		fiestResize = true
-	}
-
-
-	if (is_touch_device()) {
-		// Закрытие моб. меню свайпом справо на лево
-		let ts
-
-		$('body').on('touchstart', (e) => { ts = e.originalEvent.touches[0].clientX })
-
-		$('body').on('touchend', (e) => {
-			let te = e.originalEvent.changedTouches[0].clientX
-
-			if ($('body').hasClass('menu_open') && ts > te + 50) {
-				// Свайп справо на лево
-				$('.mob_header .mob_menu_btn').removeClass('active')
-				$('body').removeClass('menu_open')
-				$('header').removeClass('show')
-				$('.overlay').fadeOut(300)
-			} else if (ts < te - 50) {
-				// Свайп слева на право
-			}
-		})
 	}
 })
 

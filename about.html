@@ -32,6 +32,7 @@
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
+		<link rel="stylesheet" href="css/response_1899.css" media="print, (max-width: 1899px)" async>
 		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
 		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
@@ -77,14 +78,47 @@
 							<div><a href="/">EN</a></div>
 							<div><a class="active">RU</a></div>
 						</div>
+
+						<div class="socials">
+							<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow" class="facebook_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_facebook"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow" class="youtube_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow" class="vkontakte_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_vkontakte"></use></svg>
+							</a>
+						</div>
 					</div>
 				</header>
+
+
+				<section class="mob_header absolute">
+					<div class="cont row">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<button class="mob_menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+						</button>
+					</div>
+				</section>
 
 
 				<section class="about_info">
 					<div class="cont">
 						<div class="data">
-							<img src="images/tmp/about_info_img.jpg" alt="" class="img lozad">
+							<img src="images/about_info_img.jpg" alt="" class="img lozad">
+							<img src="images/mob_about_info_img.jpg" alt="" class="mob_img lozad">
 
 							<div class="name">
 								<div>АЛЕКСАНДР</div>
@@ -243,6 +277,9 @@
 					</div>
 				</div>
 			</footer>
+
+
+			<div class="overlay"></div>
 		</div>
 
 
@@ -255,8 +292,6 @@
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
-		<script src="js/inputmask.min.js"></script>
-		<script src="js/nice-select.js"></script>
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
