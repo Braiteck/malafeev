@@ -232,6 +232,8 @@ button
     min-height: 100%;
 
     background: var(--bg);
+
+    flex: 1 0 auto;
 }
 
 
