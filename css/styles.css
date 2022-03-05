@@ -1379,6 +1379,7 @@ header .socials a + a
     object-fit: cover;
 }
 
+
 .about_info .mob_img
 {
     position: absolute;
@@ -1408,13 +1409,21 @@ header .socials a + a
 
     margin-left: 20px;
 
+    transition: opacity .3s linear .5s;
     text-transform: uppercase;
+
+    opacity: 0;
 }
 
 .about_info .name > * + *
 {
     margin-top: 13px;
     margin-left: 87px;
+}
+
+.about_info .name.animated
+{
+    opacity: 1;
 }
 
 
@@ -1427,27 +1436,54 @@ header .socials a + a
     position: absolute;
     z-index: 3;
 
+    transition: .5s linear;
     white-space: nowrap;
 
-    opacity: .5;
+    opacity: 0;
 }
 
 .about_info .quote1
 {
     top: 285px;
     left: 53px;
+
+    transition-delay: 1s;
+    transform: translateX(-100%);
 }
 
 .about_info .quote2
 {
     top: 377px;
     left: 498px;
+
+    transition-delay: .7s;
+    transform: translateX(100%);
 }
 
 .about_info .quote3
 {
     top: 680px;
     left: 418px;
+
+    transition-delay: 1.3s;
+    transform: translateY(100%);
+}
+
+
+.about_info .quote.animated
+{
+    opacity: .5;
+}
+
+.about_info .quote1.animated,
+.about_info .quote2.animated
+{
+    transform: translateX(0%);
+}
+
+.about_info .quote3.animated
+{
+    transform: translateY(0%);
 }
 
 

@@ -1,3 +1,21 @@
+// Observer API
+const boxes = document.querySelectorAll('.animate')
+
+function scrollTracking(entries) {
+	for (const entry of entries) {
+		if (entry.intersectionRatio >= 0.2) {
+			entry.target.classList.add('animated')
+		}
+	}
+}
+
+const observer = new IntersectionObserver(scrollTracking, {
+	threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+})
+
+boxes.forEach(element => observer.observe(element))
+
+
 $(() => {
 	// Есть ли поддержка тач событий или это apple устройство
 	if (!is_touch_device() || !/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) $('html').addClass('custom_scroll')
@@ -5,13 +23,13 @@ $(() => {
 
 	// Ленивая загрузка
 	setTimeout(() => {
-		observer = lozad('.lozad', {
+		lozadObserver = lozad('.lozad', {
 			rootMargin: '200px 0px',
 			threshold: 0,
 			loaded: el => el.classList.add('loaded')
 		})
 
-		observer.observe()
+		lozadObserver.observe()
 	}, 200)
 
 
