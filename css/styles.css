@@ -1104,6 +1104,175 @@ header .socials a + a
 
 
 
+/*-----------------------
+    Mob. Next concert
+-----------------------*/
+.mob_next_concert
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+
+    transition: transform .2s linear;
+    transform: translateY(calc(100% - 56px));
+}
+
+
+.mob_next_concert .btn
+{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+
+    display: flex;
+
+    width: 100%;
+    height: 56px;
+
+    text-transform: uppercase;
+
+    background: #fff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mob_next_concert .btn .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+
+    transition: transform .2s linear;
+}
+
+
+.mob_next_concert.show
+{
+    transform: translateY(0);
+}
+
+.mob_next_concert.show .btn .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.mob_next_concert .concert
+{
+    color: #fff;
+
+    display: flex;
+
+    padding: 24px;
+
+    background: #5aa5b4;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.mob_next_concert .concert .name
+{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+
+    width: 100%;
+
+    text-transform: uppercase;
+}
+
+
+.mob_next_concert .concert .desc
+{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+
+    width: 100%;
+    margin-top: 8px;
+
+    text-transform: uppercase;
+}
+
+
+.mob_next_concert .concert .date
+{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+
+    display: flex;
+
+    margin-top: 24px;
+
+    text-transform: uppercase;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mob_next_concert .concert .day
+{
+    font-size: 18px;
+    line-height: 22px;
+
+    margin-right: 8px;
+}
+
+.mob_next_concert .concert .time
+{
+    margin-left: 8px;
+}
+
+
+.mob_next_concert .concert .link
+{
+    color: currentColor;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+
+    display: flex;
+
+    margin-top: 24px;
+    margin-left: auto;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mob_next_concert .concert .link .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+
+
 /*-------------
     Socials
 -------------*/

@@ -76,6 +76,8 @@
     ------------------*/
     .next_concert
     {
+        display: none;
+
         width: 100%;
     }
 
@@ -153,6 +155,15 @@
     {
         right: 0;
         left: auto;
+    }
+
+
+    /*-----------------------
+        Mob. Next concert
+    -----------------------*/
+    .mob_next_concert
+    {
+        display: block;
     }
 
 

@@ -7,7 +7,13 @@ $(() => {
 	$('.next_concert .btn').click((e) => {
 		e.preventDefault()
 
-		$('.next_concert').addClass('show')
+		$('.next_concert').toggleClass('show')
+	})
+
+	$('.mob_next_concert .btn').click((e) => {
+		e.preventDefault()
+
+		$('.mob_next_concert').toggleClass('show')
 	})
 
 	$(document).click((e) => {
