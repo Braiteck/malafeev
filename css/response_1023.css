@@ -364,6 +364,7 @@
     .concerts_head
     {
         margin-bottom: 60px;
+        padding: 0;
     }
 
 
@@ -401,6 +402,13 @@
         margin-top: 32px;
     }
 
+
+    .concerts_head .sort
+    {
+        position: relative;
+
+        margin-top: 24px;
+    }
 
     .concerts_head .sort .btn
     {

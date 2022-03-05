@@ -88,6 +88,12 @@
     /*-------------------
         Concerts head
     -------------------*/
+    .concerts_head
+    {
+        padding-bottom: 102px;
+    }
+
+
     .concerts_head .image
     {
         height: 589px;
@@ -98,12 +104,6 @@
     {
         width: 586px;
         padding: 48px 56px;
-    }
-
-
-    .concerts_head .sort
-    {
-        margin-top: 24px;
     }
 
 

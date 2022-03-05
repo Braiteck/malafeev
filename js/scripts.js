@@ -10,6 +10,12 @@ $(() => {
 		$('.next_concert').addClass('show')
 	})
 
+	$(document).click((e) => {
+		if ($(e.target).closest('.next_concert').length === 0) {
+			$('.next_concert').removeClass('show')
+		}
+	})
+
 
 	// Галерея - модалка
 	$('.photo_gallery .item').click(function (e) {

@@ -351,6 +351,30 @@ button
 }
 
 
+.fancybox__content > .carousel__button.is-close
+{
+    color: #fff;
+
+    top: 0;
+    right: 20px;
+
+    width: 44px;
+    height: 44px;
+}
+
+.modal.fancybox__content > .carousel__button.is-close svg
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    filter: none;
+    stroke: none;
+    stroke-width: 1px;
+}
+
+
 
 /*--------------
     All link
@@ -1422,6 +1446,7 @@ header .socials a + a
     position: relative;
 
     margin-bottom: 96px;
+    padding-bottom: 158px;
 }
 
 
@@ -1531,10 +1556,14 @@ header .socials a + a
 
 .concerts_head .sort
 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
     width: 1182px;
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 80px;
 
     justify-content: flex-end;
 }
@@ -1577,9 +1606,25 @@ header .socials a + a
 .concerts_head .sort .btn span
 {
     color: var(--bg);
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #5aa5b4; */
 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #5aa5b4;
+    text-shadow: -0   -1px 0   #5aa5b4,
+    0   -1px 0   #5aa5b4,
+    -0    1px 0   #5aa5b4,
+    0    1px 0   #5aa5b4,
+    -1px -0   0   #5aa5b4,
+    1px -0   0   #5aa5b4,
+    -1px  0   0   #5aa5b4,
+    1px  0   0   #5aa5b4,
+    -1px -1px 0   #5aa5b4,
+    1px -1px 0   #5aa5b4,
+    -1px  1px 0   #5aa5b4,
+    1px  1px 0   #5aa5b4,
+    -1px -1px 0   #5aa5b4,
+    1px -1px 0   #5aa5b4,
+    -1px  1px 0   #5aa5b4,
+    1px  1px 0   #5aa5b4;
 }
 
 
@@ -1823,17 +1868,12 @@ header .socials a + a
 
 .concerts .concert .thumb
 {
-    color: var(--text_color);
-
     position: relative;
 
-    display: block;
     overflow: hidden;
 
     width: 416px;
     max-width: 100%;
-
-    text-decoration: none;
 
     background: #ddd;
 }
@@ -2177,6 +2217,7 @@ header .socials a + a
 .articles .thumb:after
 {
     position: absolute;
+    z-index: 5;
     bottom: 0;
     left: 0;
 
@@ -2932,12 +2973,6 @@ footer .creator a
     pointer-events: auto;
 
     opacity: 1;
-}
-
-
-#gallery_modal .carousel__button.is-close
-{
-    display: none !important;
 }
 
 

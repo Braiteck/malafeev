@@ -29,6 +29,10 @@ $(() => {
 		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
 	}
 
+	Fancybox.defaults.template = {
+		closeButton: '<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>',
+	}
+
 	// Увеличение картинки
 	Fancybox.bind('.fancy_img', {
 		Image: {
